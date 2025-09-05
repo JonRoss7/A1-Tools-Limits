@@ -1,0 +1,23 @@
+What is the value of argv?
+
+Answer: 0x7fffffffcfb8
+
+What is pointed to by argv?
+
+Answer: The executable and any input file after the executable.
+
+What is the address of the function main?
+
+Answer: Symbol "main" is a function at address 0x5555555551e9.
+
+Explain what I see when I try info Stack?
+
+Answer: It shows the sequence of function calls made in the program.
+
+Explain what I see when I try info frame?
+
+Answer: It shows you information about function's stack frame, some of the registers (saved and local) and the source language.
+
+Explain what I see when I try Info Registers?
+
+Answer: Registers like rdi and rsi are holding argc and argv, and rip is pointing to the current instruction in main.
