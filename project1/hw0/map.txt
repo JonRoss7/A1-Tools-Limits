@@ -1,0 +1,30 @@
+which addresses are defined in the executable?
+
+Answer: _main: in the .text segment (code). 
+        recur: in the .text segment (code).
+        foo: in the .bss segment.
+        stuff: in the .data segment.
+
+List of important segments, and what they are used?
+
+Answer: .text: Machine code for functions like _main, recur.
+        .data: Statically allocated, initialized global variables.
+        .bss:  Statically allocated, uninitialized globals.
+        Heap:  Dynamically allocated memory from malloc.
+        Stack: Local variables and function call frames.
+
+What direction is the stack growing?
+
+Answer: It is growing downward
+
+How large is the stack frame for each recursive call?
+
+Answer: It is about 48 bytes between each recursive call
+
+Where is the heap? What direction is it growing?
+
+Answer: The heaps begins at addresses returned by malloc, and it is growing upward
+
+Is there any extra space between their addresses?
+
+Answer: Yes, they are adjacent in memory, but not perfectly back-to-back. The difference is 112 bytes, even though each allocation requested 100 bytes. This gap is caused by allocator metadata and alignment.

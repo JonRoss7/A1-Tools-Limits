@@ -1,0 +1,15 @@
+What file format is used for this binary? And what architecture is it compiled for?
+
+Answer: file format elf64-x86-64 and i386:x86-64
+
+What are some of the names of segment/sections you find?
+
+Answer: Some of the section names are .plt, .data, .text, .fini, and .comment
+
+What segment/section contains main (the function) and what is the address of main?
+
+Answer: It was in the .text section and the address of main was 0x5555555551e9
+
+Do you see the stack segment anywhere? What about heap? Explain
+
+Answer: No I don't see any sections mentioning stack or heap because both the stack/heap are built during the runtime.
