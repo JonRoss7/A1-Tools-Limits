@@ -42,7 +42,7 @@ Developed a Unix `wc` utility clone that:
 - Compared theoretical vs. actual system constraints
 
 ## Key Challenges
-- **Tool learning curve**: Mastering gdb commands and vim modal editing
+- **Tool learning curve**: Mastering gdb commands
 - **Memory concepts**: Understanding stack/heap organization and address spaces
 - **Debugging skills**: Reading stack traces and correlating objdump with runtime behavior
 - **Build systems**: Writing proper Makefiles with dependencies
